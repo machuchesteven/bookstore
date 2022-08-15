@@ -89,7 +89,7 @@
     flex-direction: column;
     }
     .email-login label {
-    color: rgb(170 166 166);
+    color: rgb(170 166 168);
     }
 
     input[type="text"],
