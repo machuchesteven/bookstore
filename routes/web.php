@@ -22,4 +22,4 @@ use App\Http\Controllers\AdminController;
 Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [HomeController::class, 'login']);
-
+Route::get('/stock', [HomeController::class, 'stock']);

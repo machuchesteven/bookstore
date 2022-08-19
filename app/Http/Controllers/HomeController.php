@@ -13,4 +13,7 @@ class HomeController extends Controller
     public function login(){
         return view('login');
     }
+    public function stock(){
+        return view('stock');
+    }
 }

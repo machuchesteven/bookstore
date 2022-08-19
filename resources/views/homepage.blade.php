@@ -144,28 +144,7 @@
         </div>
     </div>
 
-    <hr class="mt-5" />
-
-    <div class="container-fluid bg-light">
-        <div class="container">
-            <h3 class="text-center">
-                More Resources From Us
-            </h3>
-            <div class="row my-md-5">
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <h4>eBOOKSTORE</h4>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <h5>Other Products</h5>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <h5>Our Partners</h5>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <h5>Find Us on Social Media</h5>
-                </div>
-            </div>
-        </div>
+     <hr class="mt-5" />
     </div>
-    @endsection
+        </div>
+@endsection

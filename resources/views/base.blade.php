@@ -23,7 +23,7 @@
         }
      </style>
 </head>
-<body>
+<body class="container-fluid">
     <div id="navigator">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -48,7 +48,33 @@
             </div>
           </nav>
     </div>
+  <hr />
 @yield('main')
+
+<div class="w-100 bg-light">
+
+    <h3 class="text-center">
+        More Resources From Us
+    </h3>
+    <div class="row my-md-5">
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h4>eBOOKSTORE</h4>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h5>Other Products</h5>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h5>Our Partners</h5>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12">
+            <h5>Find Us on Social Media</h5>
+        </div>
+    </div>
+</div>
+
+
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
