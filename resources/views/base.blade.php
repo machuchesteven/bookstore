@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,7 +12,7 @@
 
     <title>eBookStore: Buy, Pay and Get</title>
     <style>
-        *{font-family: 'Lato', sans-serif;}
+        *{font-family: 'Poppins', sans-serif;}
         .ratings i{
             color: gold;
 
@@ -21,13 +20,16 @@
         .strike-text{
             color: red;
         }
+        .text-weight-light{
+          font-weight: 300;
+        }
      </style>
 </head>
 <body class="container-fluid">
     <div id="navigator">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">eBOOKSTORE</a>
+              <a class="navbar-brand" href="url('/')">eBOOKSTORE</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,7 +39,10 @@
                     <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home me-2"></i><span>Home</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-shopping-cart me-2"></i><span class="sm-hidden">Cart</span></a>
+                    <a class="nav-link" aria-current="page" href="{{  route('cart') }}"><i class="fas fa-shopping-cart me-2"></i><span class="sm-hidden">Cart</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{route('store')}}"><i class="fas fa-shopping-cart me-2"></i><span class="sm-hidden">My Orders</span></a>
                   </li>
                 </ul>
                 <form class="d-flex justify-content-end my-auto">

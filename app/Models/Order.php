@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     use HasFactory;
+    protected $timestamps = true;
+    public function customer(){
+        return this->belongsTo(Customer::class);
+    }
+    public function order_books(){
+        return this->hasMany(OrderBook::class);
+    }
 }

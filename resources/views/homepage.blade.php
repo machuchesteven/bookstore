@@ -44,20 +44,23 @@
                 More Books For You!
             </h2>
         </div>
-        <div class="book-card row">
-        <div class="col-md-3">
+        <div class="book-card row g-2">
+        <div class="col-md-4 p-2 border">
+        
+        <div class="row">
             <img src="" alt="" class="book-cover img-fluid">
         </div>
-        <div class="col-md-9 pl-2 book-card-info">
-            <div class="row"><span class="col-10"><h5>Book Title</h5></span><span class="col-4">$ <h5 class="book-card-price">45.00</h5></span> </div>
-            <div class="row"><span class="col-6 book-card-author">Book Author</span> <span class="col-4"><p class="book-card-year">Pub: <b>2018</b></p></span></div>
-            <p class="book-card-intro">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore provident itaque soluta suscipit odit tempore! Voluptatibus assumenda repudiandae dolores. Iste nihil itaque repudiandae quis porro inventore laborum sapiente harum odit sunt delectus et voluptatum, molestiae at distinctio temporibus, sit rerum!
+        <div class="row">
+            <h5 class="book-title text-bold">
+                Awaken The Giant Within You
+            <p class="book-card-intro text-weight-light">
+                <i><small> ipsum dolor sit amet consectetur, adipisicing elit.</small></i>
             </p>
             <div class="row">
                 <div class="col-6"><button class="btn btn-sm btn-primary w-100"><i class="fas fa-money-bill me-2"></i> Buy Now</button></div>
                 <div class="col-6 px-2"><button class="btn btn-sm btn-outline-danger w-100"><i class="fa fa-cart-plus me-3" aria-hidden="true"></i> Add to Cart</button></div>
             </div>
+        </div>
         </div>
     </div>
     <hr class="mt-5" />

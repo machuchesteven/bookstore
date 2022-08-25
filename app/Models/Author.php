@@ -4,9 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Realations\HasMany;
 
 class Author extends Model
 {
+    use hasFactory;
     protected  $casts = [
 
     ];
@@ -14,7 +16,11 @@ class Author extends Model
 
     protected $primaryKey = 'id';
 
-    protected $fillable = ['firstName','lastName'];
+    protected $fillable = ['first_name','last_name'];
 
+
+    public function books(){
+        return $this->hasMany(Book::class);
+    }
 
 }
