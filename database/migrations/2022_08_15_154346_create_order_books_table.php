@@ -15,7 +15,10 @@ return new class extends Migration
     {
         Schema::create('order_books', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->tinyInteger('quantity')->default(1);
+            $table->decimal('subtotal', 10, 2)->nullable();
+            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
         });
     }
 

@@ -23,6 +23,9 @@ class Book extends Model
     public function publisher(){
         return $this->belongsTo(Publisher::class);
     }
+    public function added_by(){
+        return $this->belongsTo(User::class);
+    }
     protected $casts = [
         'price' => 'float(10:2)',
     ];

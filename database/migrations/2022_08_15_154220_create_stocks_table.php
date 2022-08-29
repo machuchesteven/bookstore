@@ -16,6 +16,10 @@ return new class extends Migration
         Schema::create('stocks', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->integer('available')->signed()->nullable()->default(0);
+            $table->integer('sold')->signed()->nullable()->default(0);
+            $table->foreign('book_id')->references('id')->on('books')->onDelete('cascade');
+            
         });
     }
 

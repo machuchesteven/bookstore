@@ -16,6 +16,10 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->double('total', 15, 8)->nullable()->default(0);
+            $table->enum('completed', ['yes', 'no'])->nullable()->default('no');
+            $table->enum('status', [ 'unpaid','shipping','derivered'])->nullable()->default('unpaid');
+            $table->foreign('customer_id')->references('id')->on('customer')->onDelete('cascade');
         });
     }
 
